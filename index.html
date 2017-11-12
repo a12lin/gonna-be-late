@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+
+		<!-- Navigation -->
+	    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<li id="brand"><a class="navbar-brand" href="#">Gonna Be Late!</a></li>
+						<li id="about"><a href="#"><i>What is this?</i></a></li>
+					</ul>
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!-- /.navbar -->
+
+ 
+		<!-- Form Field -->
+		<p id="about-text" class="about hidden">Got a social obligation to go to, but just don't wanna? Instead of coming up with an excuse that sounds as fake as it really is, simply type in the location below and get some believable excuses you can use - believable because they're based on real things, like real-time traffic delays. Next time you decide to show up late or show up never, make it seem like you really tried to make it on time. <u>Gonna Be Late</u> &copy; is the satirical work of Annie L. Lin, 2017.&nbsp;&nbsp;&nbsp;<a href="#" id="about-close">[Hide]</a></p>
+        <form class="form-horizontal" id="form">
+            <div class="form-group form-group-lg">
+                 <label class="col-sm-4 control-label">Where is your social obligation?</label>
+                 <div class="col-sm-6">
+                    <input type="text" class="form-control" id="address" placeholder="type the city, address, or zip code">
+                </div>
+			</div>
+			<div class="form-group form-group-lg">
+				<div class="col-sm-offset-4 col-sm-8">
+					Bay Area?          <input type="checkbox" class="form-check-input" id="checkbox">
+				</div>
+			</div>
+            <div class="form-group form-group-lg">
+                <div class="col-sm-offset-4 col-sm-8">
+					<button type="submit" class="btn btn-default" id="button">Excuse me!</button>
+					<p id="loading" class="hidden"><i><font color="blue">Loading...</font></i></p>
+                </div>
+            </div>
+        </form>
+
+       
+		
+        <!-- JavaScript Files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+		<script src="js/script.js"></script>
+
+
+		<!-- Page Content -->
+		<div class="container-fluid hidden" id="content">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="page-header">
+						<h1>Excuses you can use:</h1>
+						<!--
+						<p>Posted by <span class="glyphicon glyphicon-user"></span> <a href="#">Matthijs Jansen</a> on <span class="glyphicon glyphicon-time"></span> 12 January 2015 10:00 am</p>
+						-->
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- Section MapQuest / 511 -->
+			<div class="col-sm-12" id="headingMapQuest511"></div>
+			<div class="row margin-b-2" id="sectionMapQuest"></div>
+			<div class="row margin-b-2" id="section511"></div>
+
+
+			<!-- Section Eventful -->
+			<div class="col-sm-12" id="headingEventful"></div>
+			<div class="row margin-b-2" id="sectionEventful"></div>
+
+
+			<!-- Section BART -->
+			<div class="col-sm-12" id="headingBart"></div>
+			<div class="row margin-b-2" id="sectionBart"></div>
+
+
+			<!-- Section NYT -->
+			<div class="col-sm-12" id="headingNYT"></div>
+			<div class="row margin-b-2" id="sectionNYT"></div>
+			<br><br>
+
+
+			<!-- Timeless Excuses -->
+			<div class="col-sm-12 hidden" id="timeless">
+
+				<div class="page-header">
+					<h3><span class="glyphicon glyphicon-paperclip"></span><i>  Timeless excuses</i></h3>
+					<p><i>Other handy excuses that transcend space and time.</i></p>
+				</div>
+
+				<div>
+					<ul id="timeless_content"></ul>
+				</div>
+
+				<ul>
+				<li>
+				<form class="form-inline">
+					<div class="input-group">
+					<div class="form-group">
+						  <input type="text" class="form-control" id="excuse" placeholder="Share your favorite excuse..." style="width: 300px;">
+					</div>
+					<button type="button" class="btn btn-default" id="share_button">Share</button>
+					</div>
+				</form>
+				</li>
+				</ul>
+				
+			</div>
+
+
+
+		</div>
+		<!-- /.container-fluid -->
+
+
+</body>
+</html>
