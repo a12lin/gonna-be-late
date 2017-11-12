@@ -4,7 +4,7 @@ Got a social obligation to go to, but just don't wanna? Instead of coming up wit
 
 So next time you decide to show up late or show up never, use **Gonna Be Late** to make it seem like you really tried to make it on time.
 
-The live version of this app can be viewed at <a href="https://gonna-be-late.firebaseapp.com" target="_blank">https://gonna-be-late.firebaseapp.com</a>.
+<a href="https://gonna-be-late.firebaseapp.com" target="_blank">Go to live version of app</a>
 
 <br>
 
