@@ -33,9 +33,9 @@ Next time you decide to show up late or show up never, use **Gonna Be Late** to 
 ## What's next
 
 **Gonna Be Late** v.1 can do a lot, but it can't do everything. I'd like for v.2 to include the following improvements:
-* Provide auto-complete functionality when users start typing in the location
+* Provide auto-complete functionality when users start typing in a location.
 * Pull the status of local public transit, including in cities beyond the Bay Area.
-* Allow users to share out an excuse via text or Facebook.
+* Allow users to share out an excuse with friends via text or Facebook.
 
 
 <br><br>
